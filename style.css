@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  #quiz {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  #flashcard {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #flashcard.answer {
+    background-color: #3498db;
+  }
+  
+  #timer {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #007bff;
+  }
+  
+  button:active:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  #start {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  #start:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
+  #next-question {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  #next-question:hover:not(:disabled) {
+    background-color: #e0a800;
+  }
+  
+  #show-answer {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  #show-answer:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  button {
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  @media screen and (max-width: 480px) {
+    #quiz {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #flashcard {
+      font-size: 18px;
+    }
+  
+    #timer {
+      font-size: 18px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
